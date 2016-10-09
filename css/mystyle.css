@@ -1,0 +1,158 @@
+body, ul, li, a, p, div {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*body {
+    background: #fff none repeat scroll 0 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}*/
+
+#header {
+    background: #174199 none repeat scroll 0 0;
+    border-bottom: 1px solid #11347d;
+    box-shadow: 1px 2px 5px #11347d;
+    color: #fff;
+    position: fixed;
+    font-size: 30px;
+    font-weight: bold;
+    height: 79px;
+    line-height: 80px;
+    width: 100%;
+    z-index: 9999;
+}
+
+#logo {
+    float: left;
+    margin-left: 15px;
+}
+
+#return {
+    float: right;
+    margin-right: 15px;
+}
+
+#return img {
+    margin-top: 25px;
+    width: 30px;
+}
+
+#mapContainer {
+    height: 100%;
+    width: 100%;
+}
+
+#detail_div {
+    background-color: yellow;
+    position: fixed;
+    left: 10px;
+    top: 100px;
+    width: 260px;
+    visibility: hidden;
+}
+
+#detail_header {
+    position: relative;
+    background: #3B94D6;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 36px;
+    width: 100%;
+}
+
+#team_div, #expert_div, #equipment_div {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 100;
+    left: 0;
+    background-color: lightblue;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+
+
+#myToolDiv {
+    background-color: gray;
+    position: fixed;
+    right: 10px;
+    top: 100px;
+    width: auto;
+    height: 50;
+}
+
+#scrollDiv {
+    background-color: lightblue;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    position: fixed;
+    right: 10px;
+    top: 100px;
+    width: 290px;
+    height: 280px;
+}
+
+#scrollHeader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 36px;
+    width: 290px;
+    background: #3B94D6;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.headerText {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#demo {
+    overflow: hidden;
+    /*溢出的部分不显示*/
+    width: 290px;
+    height: 228px;
+    /*一定要确切，避免demo1与demo2之间的距离过大*/
+    padding: 10px;
+    margin: 30px auto;
+}
+
+#express li {
+    list-style: none;
+    font-size: 14px;
+    height: 25px;
+    margin: 0px 5px;
+    line-height: 180%;
+    /*行与行之间的距离*/
+    letter-spacing: 2px;
+    /*字与字之间的距离*/
+    border-bottom: 1px dashed #ccc;
+    cursor: pointer;
+}

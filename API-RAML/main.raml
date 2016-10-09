@@ -1,0 +1,45 @@
+#%RAML 0.8
+---
+title: woaianquan-map
+version: v1.0
+baseUri: www.woaianquan.com.cn
+
+traits:
+  - typeQuery:
+      queryParameters:
+        pointtype:
+          description: 救援点的类型：人员，装备，队伍，全部
+          type: string
+          enum: ["renyuan","zhuangbei","duiwu","全部"]
+
+
+/rescuepoints:
+  get:
+    is: [typeQuery]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include sample/rescuepoints-get.sample
+  /renyuan-{pointId}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include sample/rescuepoints-renyuanpoint-get.sample
+  /duiwu-{pointId}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include sample/rescuepoints-duiwupoint-get.sample
+
+  /zhuangbei-{pointId}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include sample/rescuepoints-zhuangbeipoint-get.sample
